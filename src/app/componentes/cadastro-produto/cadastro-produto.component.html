@@ -1,0 +1,33 @@
+<div class="container-cadastro-produto">
+  <h2>Cadastro de Produto</h2>
+  <form [formGroup]="form" (ngSubmit)="salvar()">
+    <div class="item-produto">
+      <label for="nome">Nome</label>
+      <mat-form-field class="custom-field" appearance="outline" >
+        <input id="nome" matInput formControlName="nome"/>
+        <mat-icon matPrefix fontIcon="app_registration"></mat-icon>
+      </mat-form-field>
+    </div>
+
+    <div class="item-produto">
+      <label for="taxa-anual">Taxa anual</label>
+      <mat-form-field class="custom-field" appearance="outline">
+        <input id="taxa-anual" matInput formControlName="taxaAnual"/>
+        <mat-icon matPrefix fontIcon="percent"></mat-icon>
+      </mat-form-field>
+    </div>
+
+    <div class="item-produto">
+      <label for="prazo-maximo">Prazo máximo (em meses)</label>
+      <mat-form-field class="custom-field" appearance="outline">
+        <input id="prazo-maximo" matInput formControlName="prazoMaximo"/>
+        <mat-icon matPrefix fontIcon="date_range"></mat-icon>
+      </mat-form-field>
+    </div>
+    <div>
+      <button class="botao-salvar" mat-raised-button>Salvar</button>
+    </div>
+
+  </form>
+</div>
+

@@ -1,0 +1,27 @@
+
+.card-group {
+  display: flex;
+  justify-content: center;
+}
+
+.card-item {
+  display: flex;
+  align-items: center;
+  width: 260px;
+  margin: 20px;
+  padding: 20px;
+  background-color: var(--azul_cx-st);
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 16px;
+}
+
+.card-item:hover {
+  background-color: var(--azul_cx-lighter-1);
+  transform: scale(1.05);
+}
+
+.card-item:active {
+  background-color: var(--azul_cx-darker-1);
+}

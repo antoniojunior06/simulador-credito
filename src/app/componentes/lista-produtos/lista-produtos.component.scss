@@ -1,0 +1,42 @@
+
+.filtro-produto {
+  margin-left: calc(15%);
+  margin-right: calc(15%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.custom-field {
+  margin-top: 20px;
+  width: 350px;
+}
+
+.tabela-produto {
+  margin: 0 auto;
+  width: 70%;
+  border-collapse: collapse; /* Remove espaços entre as células */
+}
+
+th, td {
+  border: 1px solid rgba(0, 0, 0, 0.1); /* Define a borda das células */
+  padding: 8px; /* Adiciona espaçamento interno */
+  text-align: left; /* Alinha o conteúdo à esquerda */
+}
+
+th {
+  text-align: center;
+  font-weight: 600;
+}
+
+td:nth-child(2) {
+  width: 25%;
+  text-align: center;
+}
+
+td:nth-child(3) {
+  width: 25%;
+  text-align: center;
+}
+
+

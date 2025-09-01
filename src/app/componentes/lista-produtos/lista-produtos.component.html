@@ -1,0 +1,39 @@
+<div class="filtro-produto">
+  <mat-form-field class="custom-field" appearance="outline">
+    <input
+      matInput
+      (keyup)="applyFilter($event)"
+      placeholder="Pesquisar"
+      #input
+    />
+    <mat-icon matSuffix fontIcon="search"></mat-icon>
+  </mat-form-field>
+
+  <mat-paginator [pageSizeOptions]="[5, 10, 15, 50, 100]" aria-label="Seleção de páginas na lista de produto"></mat-paginator>
+</div>
+
+<div class="mat-elevation-z8 tabela-produto">
+  <table mat-table [dataSource]="dataSource" matSort>
+    <!-- Coluna Nome -->
+    <ng-container matColumnDef="nome">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Nome</th>
+      <td mat-cell *matCellDef="let produto">{{ produto.nome }}</td>
+    </ng-container>
+
+    <!-- Coluna Taxa Anual -->
+    <ng-container matColumnDef="taxaAnual">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Taxa Anual</th>
+      <td mat-cell *matCellDef="let produto">{{ produto.taxaAnual }}</td>
+    </ng-container>
+
+    <!-- Coluna Prazo Máximo -->
+    <ng-container matColumnDef="prazoMaximo">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Prazo Máximo (em meses)</th>
+      <td mat-cell *matCellDef="let produto">{{ produto.prazoMaximo }}</td>
+    </ng-container>
+
+    <!-- Header e Cells -->
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+  </table>
+</div>

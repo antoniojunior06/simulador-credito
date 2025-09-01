@@ -1,0 +1,34 @@
+
+.header {
+  width: 100%;
+  height: 64px;
+  background: linear-gradient(to right, var(--azul_cx-st), var(--turquesa-st));
+  display: flex;
+  align-items: center;
+}
+
+.header h1, a {
+  margin: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-left: 20px;
+  width: 40px;
+  cursor: pointer;
+}
+
+.titulo {
+  font-weight: 600;
+  font-size: 1.5em;
+  color: #FFFFFF;
+}
+
+.divisor {
+  width: 1px;
+  height: 40px;
+  background-color: var(--laranja_cx-st);
+  margin: 0 20px;
+}
