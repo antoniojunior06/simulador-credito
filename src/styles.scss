@@ -41,29 +41,21 @@ html, body {
   --laranja_cx-lighter-1: #FFA829;
   --laranja_cx-darker-1: #C27300;
   --turquesa-st: #54BBAB;
+  --danger-st: #B22C2C;
 }
 
-// /* BASE (normal) */
-// .custom-field.mat-mdc-form-field .mdc-notched-outline__leading,
-// .custom-field.mat-mdc-form-field .mdc-notched-outline__notch,
-// .custom-field.mat-mdc-form-field .mdc-notched-outline__trailing {
-//   border-color: #ff6600 !important;  /* cor normal */
-//   border-width: 2px !important;      /* espessura opcional */
-// }
+/* Remove as setas dos inputs type="number" no Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
-// /* HOVER */
-// .custom-field.mat-mdc-form-field:hover .mdc-notched-outline__leading,
-// .custom-field.mat-mdc-form-field:hover .mdc-notched-outline__notch,
-// .custom-field.mat-mdc-form-field:hover .mdc-notched-outline__trailing {
-//   border-color: #00b5ad !important;
-// }
+/* Remove as setas dos inputs type="number" no Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
 
-// /* FOCUS (ativo) */
-// .custom-field.mat-mdc-form-field.mat-mdc-focused .mdc-notched-outline__leading,
-// .custom-field.mat-mdc-form-field.mat-mdc-focused .mdc-notched-outline__notch,
-// .custom-field.mat-mdc-form-field.mat-mdc-focused .mdc-notched-outline__trailing {
-//   border-color: #0077cc !important;
-// }
 
 
 

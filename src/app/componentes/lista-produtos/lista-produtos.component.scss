@@ -1,7 +1,7 @@
 
 .filtro-produto {
-  margin-left: calc(15%);
-  margin-right: calc(15%);
+  margin-left: calc(25%);
+  margin-right: calc(25%);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -14,14 +14,14 @@
 
 .tabela-produto {
   margin: 0 auto;
-  width: 70%;
+  width: 50%;
   border-collapse: collapse; /* Remove espaços entre as células */
 }
 
 th, td {
   border: 1px solid rgba(0, 0, 0, 0.1); /* Define a borda das células */
   padding: 8px; /* Adiciona espaçamento interno */
-  text-align: left; /* Alinha o conteúdo à esquerda */
+  font-family: var(--fonte-principal);
 }
 
 th {
@@ -29,14 +29,29 @@ th {
   font-weight: 600;
 }
 
-td:nth-child(2) {
-  width: 25%;
+td:nth-child(1) {
+  width: 50%;
+}
+
+td:nth-child(2), td:nth-child(3) {
+  width: 10%;
   text-align: center;
 }
 
-td:nth-child(3) {
-  width: 25%;
+td:nth-child(4), td:nth-child(5) {
+  width: 5%;
   text-align: center;
 }
 
+.icone-editar, .icone-excluir {
+  cursor: pointer;
+}
+
+.icone-editar {
+  color: var(--laranja_cx-st);
+}
+
+.icone-excluir {
+  color: var(--danger-st);
+}
 

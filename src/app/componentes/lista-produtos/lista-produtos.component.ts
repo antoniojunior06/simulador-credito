@@ -7,6 +7,7 @@ import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
 import { MatSort, MatSortModule } from '@angular/material/sort';
 import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-lista-produtos',
@@ -17,13 +18,13 @@ import { MatIconModule } from '@angular/material/icon';
 })
 export class ListaProdutosComponent implements OnInit {
 
-  displayedColumns: string[] = ['nome', 'taxaAnual', 'prazoMaximo'];
+  displayedColumns: string[] = ['nome', 'taxaAnual', 'prazoMaximo', 'editar', 'excluir'];
   dataSource = new MatTableDataSource<Produto>();
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
 
-  constructor(private produtoService: ProdutoService) { }
+  constructor(private produtoService: ProdutoService, private router: Router) { }
 
   ngOnInit() {
     this.listar();
@@ -44,6 +45,16 @@ export class ListaProdutosComponent implements OnInit {
         console.error('Erro ao listar produtos', err);
       },
     });
+  }
+
+  editar(id: number) {
+    this.router.navigate(['/cadastro-produto', id]);
+  }
+
+  excluir(id: number) {
+    this.produtoService.excluir(id).subscribe(() => {
+      this.listar();
+    })
   }
 
   applyFilter(event: Event) {

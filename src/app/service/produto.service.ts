@@ -19,4 +19,16 @@ export class ProdutoService {
   listar(): Observable<Produto[]> {
     return this.http.get<Produto[]>(this.api)
   }
+
+  buscarPorId(id: number): Observable<Produto> {
+    return this.http.get<Produto>(`${this.api}/${id}`)
+  }
+
+  editar(produto: Produto): Observable<Produto> {
+    return this.http.put<Produto>(`${this.api}/${produto.id}`, produto)
+  }
+
+  excluir(id: number): Observable<void> {
+    return this.http.delete<void>(`${this.api}/${id}`);
+  }
 }

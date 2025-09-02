@@ -9,7 +9,10 @@
     <mat-icon matSuffix fontIcon="search"></mat-icon>
   </mat-form-field>
 
-  <mat-paginator [pageSizeOptions]="[5, 10, 15, 50, 100]" aria-label="Seleção de páginas na lista de produto"></mat-paginator>
+  <mat-paginator
+    [pageSizeOptions]="[5, 10, 15, 50, 100]"
+    aria-label="Seleção de páginas na lista de produto"
+  ></mat-paginator>
 </div>
 
 <div class="mat-elevation-z8 tabela-produto">
@@ -28,8 +31,24 @@
 
     <!-- Coluna Prazo Máximo -->
     <ng-container matColumnDef="prazoMaximo">
-      <th mat-header-cell *matHeaderCellDef mat-sort-header>Prazo Máximo (em meses)</th>
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>
+        Prazo Máximo (em meses)
+      </th>
       <td mat-cell *matCellDef="let produto">{{ produto.prazoMaximo }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="editar">
+      <th mat-header-cell *matHeaderCellDef>
+        Editar
+      </th>
+      <td class="icone-editar" mat-cell *matCellDef="let produto"><mat-icon fontIcon="edit" (click)="editar(produto.id)"></mat-icon></td>
+    </ng-container>
+
+    <ng-container matColumnDef="excluir">
+      <th mat-header-cell *matHeaderCellDef>
+        Excluir
+      </th>
+      <td class="icone-excluir" mat-cell *matCellDef="let produto"><mat-icon fontIcon="delete" (click)="excluir(produto.id)"></mat-icon></td>
     </ng-container>
 
     <!-- Header e Cells -->

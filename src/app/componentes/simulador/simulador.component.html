@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="container-simulador">
+    <h2>Simulador de empréstimo</h2>
+    <label for="option">Crédito</label>
+    <mat-form-field class="custom-field" appearance="outline">
+      <mat-select>
+        @for (produto of listaProdutos$ | async ; track produto.id) {
+        <mat-option [value]="produto">{{ produto.nome }}</mat-option>
+        }
+      </mat-select>
+    </mat-form-field>
+
+    <label for="valor">Valor</label>
+    <mat-form-field class="custom-field" appearance="outline">
+      <input id="valor" matInput formControlName="valor" />
+      <mat-icon matPrefix fontIcon="price_change"></mat-icon>
+    </mat-form-field>
+
+    <label for="numero-meses">Número de meses</label>
+    <mat-form-field class="custom-field" appearance="outline">
+      <input id="numero-meses" matInput formControlName="numeroMeses" />
+      <mat-icon matPrefix fontIcon="date_range"></mat-icon>
+    </mat-form-field>
+
+    <button class="botao-acao" mat-raised-button>Simular</button>
+  </div>
+</div>

@@ -1,40 +1,28 @@
 {
   "produtos": [
     {
+      "id": 12,
       "nome": "Empréstimo 1",
-      "taxaAnual": "20,5",
-      "prazoMaximo": "60",
-      "id": 1
+      "taxaAnual": 58.96,
+      "prazoMaximo": 100
     },
     {
-      "nome": "Empréstimo 2",
-      "taxaAnual": "17",
-      "prazoMaximo": "48",
-      "id": 2
+      "id": 13,
+      "nome": "fdsfasdf",
+      "taxaAnual": 32.4,
+      "prazoMaximo": 50
     },
     {
-      "nome": "Crédito Direto Caixa - CDC",
-      "taxaAnual": "40",
-      "prazoMaximo": "72",
-      "id": 3
+      "id": 14,
+      "nome": "Empréstimo 1",
+      "taxaAnual": 1523.66,
+      "prazoMaximo": 100
     },
     {
-      "nome": "Crédito Plus",
-      "taxaAnual": "15",
-      "prazoMaximo": "24",
-      "id": 4
-    },
-    {
-      "nome": "Antecipação especial",
-      "taxaAnual": "22",
-      "prazoMaximo": "48",
-      "id": 5
-    },
-    {
-      "nome": "Cred Ultra",
-      "taxaAnual": "21",
-      "prazoMaximo": "36",
-      "id": 6
+      "id": 15,
+      "nome": "Empréstimo 1",
+      "taxaAnual": 1569.75,
+      "prazoMaximo": 48
     }
   ]
 }
