@@ -1,0 +1,25 @@
+
+h3 {
+  color: var(--azul_cx-st);
+}
+
+th {
+  font-weight: 600;
+}
+
+th, td {
+  font-size: 16px;
+  font-family: var(--fonte-principal);
+}
+
+.line {
+  margin: 0 20px 0 20px;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+.resultado-cabecalho, .resultado-memoria-calculo {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}

@@ -8,11 +8,12 @@ import { MatSort, MatSortModule } from '@angular/material/sort';
 import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { Router } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-lista-produtos',
   standalone: true,
-  imports: [MatTableModule, MatFormFieldModule, MatPaginatorModule, MatSortModule, MatInputModule, MatIconModule],
+  imports: [MatTableModule, MatFormFieldModule, MatPaginatorModule, MatSortModule, MatInputModule, MatIconModule, CommonModule],
   templateUrl: './lista-produtos.component.html',
   styleUrl: './lista-produtos.component.scss'
 })

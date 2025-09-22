@@ -1,0 +1,74 @@
+<div>
+  @if (resultado) {
+    <div class="resultado-cabecalho">
+      <h3>Resultado da Simulação</h3>
+      <p><b>Produto:</b> {{ resultado.produto.nome }}</p>
+      <p><b>Valor solicitado:</b> {{ resultado.valor | currency:'BRL':'symbol':'1.2-2' }}</p>
+      <p><b>Prazo:</b> {{ resultado.prazo }} meses</p>
+      <p><b>Taxa efetiva mensal:</b> {{ resultado.taxaEfetivaMensal | number:'1.2-2' }}%</p>
+      <p><b>Parcela mensal:</b> {{ resultado.valorParcelaMensal | currency:'BRL':'symbol':'1.2-2' }}</p>
+      <p><b>Valor total com juros:</b> {{ resultado.valorTotalComJuros | currency:'BRL':'symbol':'1.2-2' }}</p>
+    </div>
+
+    <hr class="line">
+
+    <div class="resultado-memoria-calculo">
+      <h3>Memória de cálculo</h3>
+
+      <table mat-table [dataSource]="resultado.memoriaCalculo" class="mat-elevation-z8">
+
+        <!-- Coluna: Mês -->
+        <ng-container matColumnDef="mes">
+          <th mat-header-cell *matHeaderCellDef>Mês</th>
+          <td mat-cell *matCellDef="let p">{{ p.mes }}</td>
+        </ng-container>
+
+        <!-- Coluna: Juros -->
+        <ng-container matColumnDef="juros">
+          <th mat-header-cell *matHeaderCellDef>Juros</th>
+          <td mat-cell *matCellDef="let p">{{ p.juros | currency:'BRL':'symbol':'1.2-2' }}</td>
+        </ng-container>
+
+        <!-- Coluna: Amortização -->
+        <ng-container matColumnDef="amortizacao">
+          <th mat-header-cell *matHeaderCellDef>Amortização</th>
+          <td mat-cell *matCellDef="let p">{{ p.amortizacao | currency:'BRL':'symbol':'1.2-2' }}</td>
+        </ng-container>
+
+        <!-- Coluna: Saldo Devedor -->
+        <ng-container matColumnDef="saldoDevedor">
+          <th mat-header-cell *matHeaderCellDef>Saldo Devedor</th>
+          <td mat-cell *matCellDef="let p">{{ p.saldoDevedor | currency:'BRL':'symbol':'1.2-2' }}</td>
+        </ng-container>
+
+        <!-- Header e linhas -->
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+      </table>
+    </div>
+
+    <!-- <div>
+      <h4>Memória de cálculo</h4>
+      <table>
+        <thead>
+          <tr>
+            <th>Mês</th>
+            <th>Juros</th>
+            <th>Amortização</th>
+            <th>Saldo Devedor</th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (p of resultado.memoriaCalculo; track p.mes) {
+            <tr>
+              <td>{{ p.mes }}</td>
+              <td>{{ p.juros | currency:'BRL':'symbol':'1.2-2' }}</td>
+              <td>{{ p.amortizacao | currency:'BRL':'symbol':'1.2-2' }}</td>
+              <td>{{ p.saldoDevedor | currency:'BRL':'symbol':'1.2-2' }}</td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div> -->
+  }
+</div>

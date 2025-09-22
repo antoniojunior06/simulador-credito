@@ -46,8 +46,17 @@ div .botao-acao:active {
   background-color: var(--laranja_cx-darker-1);
 }
 
+div .botao-acao:disabled {
+  background-color: var(--cinza-darker-1);
+  color: white;
+}
+
 mat-icon {
   color: var(--laranja_cx-st);
+}
+
+.input-zero {
+  color: #FFFFFF;
 }
 
 .mat-mdc-form-field-input-control {

@@ -3,8 +3,8 @@
     {
       "id": 12,
       "nome": "Empréstimo 1",
-      "taxaAnual": 58.96,
-      "prazoMaximo": 100
+      "taxaAnual": 15,
+      "prazoMaximo": 101
     },
     {
       "id": 13,
@@ -23,6 +23,802 @@
       "nome": "Empréstimo 1",
       "taxaAnual": 1569.75,
       "prazoMaximo": 48
+    },
+    {
+      "id": 16,
+      "nome": "Crédito Rural",
+      "taxaAnual": 19,
+      "prazoMaximo": 60
+    },
+    {
+      "id": 18,
+      "nome": "E",
+      "taxaAnual": 1.58,
+      "prazoMaximo": 12
+    }
+  ],
+  "simulacoes": [
+    {
+      "id": 1,
+      "produto": {
+        "id": 12,
+        "nome": "Empréstimo 1",
+        "taxaAnual": 58.96,
+        "prazoMaximo": 101
+      },
+      "valor": 2500,
+      "prazoMeses": 12
+    },
+    {
+      "id": 2,
+      "produto": {
+        "id": 12,
+        "nome": "Empréstimo 1",
+        "taxaAnual": 58.96,
+        "prazoMaximo": 101
+      },
+      "valor": 2500,
+      "prazoMeses": 12
+    },
+    {
+      "id": 3,
+      "produto": {
+        "id": 12,
+        "nome": "Empréstimo 1",
+        "taxaAnual": 58.96,
+        "prazoMaximo": 101
+      },
+      "valor": 1200,
+      "prazoMeses": 12
+    },
+    {
+      "id": 4,
+      "produto": {
+        "id": 12,
+        "nome": "Empréstimo 1",
+        "taxaAnual": 58.96,
+        "prazoMaximo": 101
+      },
+      "valor": 3000,
+      "prazoMeses": 24
+    },
+    {
+      "id": 5,
+      "produto": {
+        "id": 12,
+        "nome": "Empréstimo 1",
+        "taxaAnual": 58.96,
+        "prazoMaximo": 101
+      },
+      "valor": 12222.12,
+      "prazoMeses": 12
+    },
+    {
+      "id": 6,
+      "produto": {
+        "id": 12,
+        "nome": "Empréstimo 1",
+        "taxaAnual": 58.96,
+        "prazoMaximo": 101
+      },
+      "valor": 1111.11,
+      "prazoMeses": 11
+    },
+    {
+      "id": 7,
+      "produto": {
+        "id": 12,
+        "nome": "Empréstimo 1",
+        "taxaAnual": 58.96,
+        "prazoMaximo": 101
+      },
+      "valor": 22222.22,
+      "prazoMeses": 2
+    },
+    {
+      "id": 8,
+      "produto": {
+        "id": 12,
+        "nome": "Empréstimo 1",
+        "taxaAnual": 58.96,
+        "prazoMaximo": 101
+      },
+      "valor": 11.11,
+      "prazoMeses": 1
+    },
+    {
+      "id": 9,
+      "produto": {
+        "id": 12,
+        "nome": "Empréstimo 1",
+        "taxaAnual": 58.96,
+        "prazoMaximo": 101
+      },
+      "valor": 111.11,
+      "prazoMeses": 11
+    },
+    {
+      "id": 10,
+      "produto": {
+        "id": 12,
+        "nome": "Empréstimo 1",
+        "taxaAnual": 58.96,
+        "prazoMaximo": 101
+      },
+      "valor": 10000,
+      "prazoMeses": 36
+    },
+    {
+      "id": 11,
+      "produto": {
+        "id": 12,
+        "nome": "Empréstimo 1",
+        "taxaAnual": 58.96,
+        "prazoMaximo": 101
+      },
+      "valor": 3000,
+      "prazo": 12
+    },
+    {
+      "id": 12,
+      "produto": {
+        "id": 12,
+        "nome": "Empréstimo 1",
+        "taxaAnual": 58.96,
+        "prazoMaximo": 101
+      },
+      "valor": 2500,
+      "prazo": 12
+    },
+    {
+      "id": 13,
+      "produto": {
+        "id": 12,
+        "nome": "Empréstimo 1",
+        "taxaAnual": 58.96,
+        "prazoMaximo": 101
+      },
+      "valor": 1000,
+      "prazo": 12
+    },
+    {
+      "id": 14,
+      "produto": {
+        "id": 16,
+        "nome": "Crédito Rural",
+        "taxaAnual": 19,
+        "prazoMaximo": 60
+      },
+      "valor": 1000,
+      "prazo": 12
+    },
+    {
+      "id": 15,
+      "produto": {
+        "id": 12,
+        "nome": "Empréstimo 1",
+        "taxaAnual": 58.96,
+        "prazoMaximo": 101
+      },
+      "valor": 1000,
+      "prazo": 12
+    },
+    {
+      "id": 16,
+      "produto": {
+        "id": 12,
+        "nome": "Empréstimo 1",
+        "taxaAnual": 58.96,
+        "prazoMaximo": 101
+      },
+      "valor": 1500,
+      "prazo": 12
+    },
+    {
+      "id": 17,
+      "produto": {
+        "id": 12,
+        "nome": "Empréstimo 1",
+        "taxaAnual": 58.96,
+        "prazoMaximo": 101
+      },
+      "valor": 1000,
+      "prazo": 12
+    },
+    {
+      "id": 18,
+      "produto": {
+        "id": 12,
+        "nome": "Empréstimo 1",
+        "taxaAnual": 15,
+        "prazoMaximo": 101
+      },
+      "valor": 1000,
+      "prazo": 12
+    },
+    {
+      "id": 19,
+      "produto": {
+        "id": 16,
+        "nome": "Crédito Rural",
+        "taxaAnual": 19,
+        "prazoMaximo": 60
+      },
+      "valor": 2500,
+      "prazo": 60
+    },
+    {
+      "id": 20,
+      "produto": null,
+      "valor": 9600,
+      "prazo": 24
+    },
+    {
+      "id": 21,
+      "produto": {
+        "id": 15,
+        "nome": "Empréstimo 1",
+        "taxaAnual": 1569.75,
+        "prazoMaximo": 48
+      },
+      "valor": 9600,
+      "prazo": 24
+    },
+    {
+      "id": 22,
+      "produto": {
+        "id": 16,
+        "nome": "Crédito Rural",
+        "taxaAnual": 19,
+        "prazoMaximo": 60
+      },
+      "valor": 5000,
+      "prazo": 24
+    },
+    {
+      "id": 23,
+      "produto": {
+        "id": 16,
+        "nome": "Crédito Rural",
+        "taxaAnual": 19,
+        "prazoMaximo": 60
+      },
+      "valor": 5000,
+      "prazo": 24
+    },
+    {
+      "id": 24,
+      "produto": {
+        "id": 16,
+        "nome": "Crédito Rural",
+        "taxaAnual": 19,
+        "prazoMaximo": 60
+      },
+      "valor": 1111.11,
+      "prazo": 11
+    },
+    {
+      "id": 25,
+      "produto": {
+        "id": 16,
+        "nome": "Crédito Rural",
+        "taxaAnual": 19,
+        "prazoMaximo": 60
+      },
+      "valor": 2222.22,
+      "prazo": 22
+    },
+    {
+      "id": 26,
+      "produto": null,
+      "valor": null,
+      "prazo": null
+    },
+    {
+      "id": 27,
+      "produto": {
+        "id": 16,
+        "nome": "Crédito Rural",
+        "taxaAnual": 19,
+        "prazoMaximo": 60
+      },
+      "valor": 2500,
+      "prazo": 12
+    },
+    {
+      "id": 28,
+      "produto": {
+        "id": 16,
+        "nome": "Crédito Rural",
+        "taxaAnual": 19,
+        "prazoMaximo": 60
+      },
+      "valor": 1111.11,
+      "prazo": 11
+    },
+    {
+      "id": 29,
+      "produto": {
+        "id": 16,
+        "nome": "Crédito Rural",
+        "taxaAnual": 19,
+        "prazoMaximo": 60
+      },
+      "valor": 2000,
+      "prazo": 12
+    },
+    {
+      "id": 30,
+      "produto": {
+        "id": 16,
+        "nome": "Crédito Rural",
+        "taxaAnual": 19,
+        "prazoMaximo": 60
+      },
+      "valor": 222.22,
+      "prazo": 22
+    },
+    {
+      "id": 31,
+      "produto": {
+        "id": 16,
+        "nome": "Crédito Rural",
+        "taxaAnual": 19,
+        "prazoMaximo": 60
+      },
+      "valor": 2222.22,
+      "prazo": 22
+    },
+    {
+      "id": 32,
+      "produto": {
+        "id": 16,
+        "nome": "Crédito Rural",
+        "taxaAnual": 19,
+        "prazoMaximo": 60
+      },
+      "valor": 2500,
+      "prazo": 12
+    },
+    {
+      "id": 33,
+      "produto": {
+        "id": 16,
+        "nome": "Crédito Rural",
+        "taxaAnual": 19,
+        "prazoMaximo": 60
+      },
+      "valor": 2222.22,
+      "prazo": 22
+    },
+    {
+      "id": 34,
+      "produto": {
+        "id": 16,
+        "nome": "Crédito Rural",
+        "taxaAnual": 19,
+        "prazoMaximo": 60
+      },
+      "valor": 2222.22,
+      "prazo": 22
+    },
+    {
+      "id": 35,
+      "produto": {
+        "id": 16,
+        "nome": "Crédito Rural",
+        "taxaAnual": 19,
+        "prazoMaximo": 60
+      },
+      "valor": 2500,
+      "prazo": 12
+    },
+    {
+      "id": 36,
+      "produto": {
+        "id": 16,
+        "nome": "Crédito Rural",
+        "taxaAnual": 19,
+        "prazoMaximo": 60
+      },
+      "valor": 0.02,
+      "prazo": 2
+    },
+    {
+      "id": 37,
+      "produto": {
+        "id": 16,
+        "nome": "Crédito Rural",
+        "taxaAnual": 19,
+        "prazoMaximo": 60
+      },
+      "valor": 2500,
+      "prazo": 24
+    },
+    {
+      "id": 38,
+      "produto": {
+        "id": 16,
+        "nome": "Crédito Rural",
+        "taxaAnual": 19,
+        "prazoMaximo": 60
+      },
+      "valor": 2500,
+      "prazo": 24
+    },
+    {
+      "id": 39,
+      "produto": {
+        "id": 16,
+        "nome": "Crédito Rural",
+        "taxaAnual": 19,
+        "prazoMaximo": 60
+      },
+      "valor": 1000,
+      "prazo": 12
+    },
+    {
+      "id": 40,
+      "produto": {
+        "id": 16,
+        "nome": "Crédito Rural",
+        "taxaAnual": 19,
+        "prazoMaximo": 60
+      },
+      "valor": 1000,
+      "prazo": 12
+    },
+    {
+      "id": 41,
+      "produto": {
+        "id": 16,
+        "nome": "Crédito Rural",
+        "taxaAnual": 19,
+        "prazoMaximo": 60
+      },
+      "valor": 1000,
+      "prazo": 24
+    },
+    {
+      "id": 42,
+      "produto": {
+        "id": 16,
+        "nome": "Crédito Rural",
+        "taxaAnual": 19,
+        "prazoMaximo": 60
+      },
+      "valor": 2000,
+      "prazo": 12
+    },
+    {
+      "id": 43,
+      "produto": {
+        "id": 16,
+        "nome": "Crédito Rural",
+        "taxaAnual": 19,
+        "prazoMaximo": 60
+      },
+      "valor": 1000,
+      "prazo": 12
+    },
+    {
+      "id": 44,
+      "produto": {
+        "id": 16,
+        "nome": "Crédito Rural",
+        "taxaAnual": 19,
+        "prazoMaximo": 60
+      },
+      "valor": 2500,
+      "prazo": 24
+    },
+    {
+      "id": 45,
+      "produto": {
+        "id": 16,
+        "nome": "Crédito Rural",
+        "taxaAnual": 19,
+        "prazoMaximo": 60
+      },
+      "valor": 1000,
+      "prazo": 24
+    },
+    {
+      "id": 46,
+      "produto": {
+        "id": 16,
+        "nome": "Crédito Rural",
+        "taxaAnual": 19,
+        "prazoMaximo": 60
+      },
+      "valor": 2500,
+      "prazo": 12
+    },
+    {
+      "id": 47,
+      "produto": {
+        "id": 16,
+        "nome": "Crédito Rural",
+        "taxaAnual": 19,
+        "prazoMaximo": 60
+      },
+      "valor": 1000,
+      "prazo": 12
+    },
+    {
+      "id": 48,
+      "produto": {
+        "id": 16,
+        "nome": "Crédito Rural",
+        "taxaAnual": 19,
+        "prazoMaximo": 60
+      },
+      "valor": 10000,
+      "prazo": 24
+    },
+    {
+      "id": 49,
+      "produto": {
+        "id": 16,
+        "nome": "Crédito Rural",
+        "taxaAnual": 19,
+        "prazoMaximo": 60
+      },
+      "valor": 1000,
+      "prazo": 12
+    },
+    {
+      "id": 50,
+      "produto": {
+        "id": 16,
+        "nome": "Crédito Rural",
+        "taxaAnual": 19,
+        "prazoMaximo": 60
+      },
+      "valor": 1000,
+      "prazo": 12
+    },
+    {
+      "id": 51,
+      "produto": {
+        "id": 16,
+        "nome": "Crédito Rural",
+        "taxaAnual": 19,
+        "prazoMaximo": 60
+      },
+      "valor": 1000,
+      "prazo": 12
+    },
+    {
+      "id": 52,
+      "produto": {
+        "id": 16,
+        "nome": "Crédito Rural",
+        "taxaAnual": 19,
+        "prazoMaximo": 60
+      },
+      "valor": 1200,
+      "prazo": 12
+    },
+    {
+      "id": 53,
+      "produto": {
+        "id": 16,
+        "nome": "Crédito Rural",
+        "taxaAnual": 19,
+        "prazoMaximo": 60
+      },
+      "valor": 1000,
+      "prazo": 12
+    },
+    {
+      "id": 54,
+      "produto": {
+        "id": 16,
+        "nome": "Crédito Rural",
+        "taxaAnual": 19,
+        "prazoMaximo": 60
+      },
+      "valor": 1222.22,
+      "prazo": 12
+    },
+    {
+      "id": 55,
+      "produto": {
+        "id": 16,
+        "nome": "Crédito Rural",
+        "taxaAnual": 19,
+        "prazoMaximo": 60
+      },
+      "valor": 10000,
+      "prazo": 12
+    },
+    {
+      "id": 56,
+      "produto": {
+        "id": 16,
+        "nome": "Crédito Rural",
+        "taxaAnual": 19,
+        "prazoMaximo": 60
+      },
+      "valor": 1000,
+      "prazo": 12
+    },
+    {
+      "id": 57,
+      "produto": {
+        "id": 16,
+        "nome": "Crédito Rural",
+        "taxaAnual": 19,
+        "prazoMaximo": 60
+      },
+      "valor": 1000000,
+      "prazo": 360
+    },
+    {
+      "id": 58,
+      "produto": {
+        "id": 16,
+        "nome": "Crédito Rural",
+        "taxaAnual": 19,
+        "prazoMaximo": 60
+      },
+      "valor": 1000,
+      "prazo": 12
+    },
+    {
+      "id": 59,
+      "produto": {
+        "id": 16,
+        "nome": "Crédito Rural",
+        "taxaAnual": 19,
+        "prazoMaximo": 60
+      },
+      "valor": 1200,
+      "prazo": 12
+    },
+    {
+      "id": 60,
+      "produto": {
+        "id": 16,
+        "nome": "Crédito Rural",
+        "taxaAnual": 19,
+        "prazoMaximo": 60
+      },
+      "valor": 1000000,
+      "prazo": 360
+    },
+    {
+      "id": 61,
+      "produto": {
+        "id": 16,
+        "nome": "Crédito Rural",
+        "taxaAnual": 19,
+        "prazoMaximo": 60
+      },
+      "valor": 5000,
+      "prazo": 12
+    },
+    {
+      "id": 62,
+      "produto": {
+        "id": 16,
+        "nome": "Crédito Rural",
+        "taxaAnual": 19,
+        "prazoMaximo": 60
+      },
+      "valor": 1000,
+      "prazo": 12
+    },
+    {
+      "id": 63,
+      "produto": {
+        "id": 16,
+        "nome": "Crédito Rural",
+        "taxaAnual": 19,
+        "prazoMaximo": 60
+      },
+      "valor": 5000,
+      "prazo": 12
+    },
+    {
+      "id": 64,
+      "produto": {
+        "id": 16,
+        "nome": "Crédito Rural",
+        "taxaAnual": 19,
+        "prazoMaximo": 60
+      },
+      "valor": 1000,
+      "prazo": 12
+    },
+    {
+      "id": 65,
+      "produto": {
+        "id": 16,
+        "nome": "Crédito Rural",
+        "taxaAnual": 19,
+        "prazoMaximo": 60
+      },
+      "valor": 1222.22,
+      "prazo": 12
+    },
+    {
+      "id": 66,
+      "produto": {
+        "id": 16,
+        "nome": "Crédito Rural",
+        "taxaAnual": 19,
+        "prazoMaximo": 60
+      },
+      "valor": 6000,
+      "prazo": 60
+    },
+    {
+      "id": 67,
+      "produto": {
+        "id": 16,
+        "nome": "Crédito Rural",
+        "taxaAnual": 19,
+        "prazoMaximo": 60
+      },
+      "valor": 1200,
+      "prazo": 60
+    },
+    {
+      "id": 68,
+      "produto": {
+        "id": 16,
+        "nome": "Crédito Rural",
+        "taxaAnual": 19,
+        "prazoMaximo": 60
+      },
+      "valor": 1000,
+      "prazo": 6
+    },
+    {
+      "id": 69,
+      "produto": {
+        "id": 16,
+        "nome": "Crédito Rural",
+        "taxaAnual": 19,
+        "prazoMaximo": 60
+      },
+      "valor": 2000,
+      "prazo": 24
+    },
+    {
+      "id": 70,
+      "produto": {
+        "id": 16,
+        "nome": "Crédito Rural",
+        "taxaAnual": 19,
+        "prazoMaximo": 60
+      },
+      "valor": 1000,
+      "prazo": 12
+    },
+    {
+      "id": 71,
+      "produto": {
+        "id": 16,
+        "nome": "Crédito Rural",
+        "taxaAnual": 19,
+        "prazoMaximo": 60
+      },
+      "valor": 1000,
+      "prazo": 12
+    },
+    {
+      "id": 72,
+      "produto": {
+        "id": 16,
+        "nome": "Crédito Rural",
+        "taxaAnual": 19,
+        "prazoMaximo": 60
+      },
+      "valor": 1200,
+      "prazo": 12
     }
   ]
 }

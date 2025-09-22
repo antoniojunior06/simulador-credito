@@ -1,9 +1,9 @@
 <div class="container">
-  <div class="container-simulador">
+  <form [formGroup]="form" (ngSubmit)="simular()" class="container-simulador">
     <h2>Simulador de empréstimo</h2>
     <label for="option">Crédito</label>
     <mat-form-field class="custom-field" appearance="outline">
-      <mat-select>
+      <mat-select formControlName="produto">
         @for (produto of listaProdutos$ | async ; track produto.id) {
         <mat-option [value]="produto">{{ produto.nome }}</mat-option>
         }
@@ -12,16 +12,31 @@
 
     <label for="valor">Valor</label>
     <mat-form-field class="custom-field" appearance="outline">
-      <input id="valor" matInput formControlName="valor" />
+      <input
+        id="valor"
+        matInput
+        formControlName="valor"
+        appMoedaDinamica
+        #txInput
+        [ngClass]="{ 'input-zero': isInputZerado(txInput) }"
+      />
       <mat-icon matPrefix fontIcon="price_change"></mat-icon>
     </mat-form-field>
 
-    <label for="numero-meses">Número de meses</label>
+    <label for="prazo-meses">Prazo (em meses)</label>
     <mat-form-field class="custom-field" appearance="outline">
-      <input id="numero-meses" matInput formControlName="numeroMeses" />
+      <input
+        type="number"
+        id="prazo-meses"
+        matInput
+        formControlName="prazo"
+      />
       <mat-icon matPrefix fontIcon="date_range"></mat-icon>
     </mat-form-field>
 
-    <button class="botao-acao" mat-raised-button>Simular</button>
-  </div>
+    <button class="botao-acao" mat-raised-button [disabled]="form.invalid">Simular</button>
+  </form>
 </div>
+
+<!-- <app-resultado-simulacao [resultado]="resultado"></app-resultado-simulacao> -->
+
