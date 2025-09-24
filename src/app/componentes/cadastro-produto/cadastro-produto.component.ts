@@ -10,7 +10,7 @@ import {
   Validators,
 } from '@angular/forms';
 import { ProdutoService } from '../../service/produto.service';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { MoedaDinamicaDirective } from '../../diretivas/moeda-dinamica.directive';
 
@@ -25,7 +25,8 @@ import { MoedaDinamicaDirective } from '../../diretivas/moeda-dinamica.directive
     MatButtonModule,
     ReactiveFormsModule,
     MoedaDinamicaDirective,
-  ],
+    RouterLink
+],
   templateUrl: './cadastro-produto.component.html',
   styleUrl: './cadastro-produto.component.scss',
 })

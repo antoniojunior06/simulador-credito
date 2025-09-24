@@ -1,3 +1,18 @@
+.header-lista-produto {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* centraliza o conteúdo */
+  position: relative; /* permite fixar o ícone */
+  margin-top: 16px;
+}
+
+.header-lista-produto .back-icon {
+  position: absolute;
+  left: calc(25%); /* fixa o ícone à esquerda */
+  top: 8px;
+  cursor: pointer;
+  color: var(--laranja_cx-st);
+}
 
 h2 {
   color: var(--azul_cx-st);
@@ -21,6 +36,9 @@ h2 {
   margin: 0 auto;
   width: 50%;
   border-collapse: collapse; /* Remove espaços entre as células */
+  border: 1px solid rgba(0, 0, 0, 0.12); /* borda suave igual ao Angular Material */
+  border-radius: 4px; /* opcional */
+
 }
 
 th, td {

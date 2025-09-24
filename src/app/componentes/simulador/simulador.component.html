@@ -1,5 +1,6 @@
 <div class="container">
   <form [formGroup]="form" (ngSubmit)="simular()" class="container-simulador">
+    <mat-icon fontIcon="arrow_back" class="back-icon" routerLink="/listaAtividades"></mat-icon>
     <h2>Simulador de empréstimo</h2>
     <label for="option">Crédito</label>
     <mat-form-field class="custom-field" appearance="outline">

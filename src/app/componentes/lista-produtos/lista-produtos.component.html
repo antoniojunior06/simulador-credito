@@ -1,4 +1,8 @@
+<div class="header-lista-produto">
+  <mat-icon fontIcon="arrow_back" class="back-icon" routerLink="/listaAtividades"></mat-icon>
+</div>
 <h2>Lista de produtos</h2>
+
 <div class="filtro-produto">
   <mat-form-field class="custom-field" appearance="outline">
     <input
@@ -13,10 +17,11 @@
   <mat-paginator
     [pageSizeOptions]="[5, 10, 15, 50, 100]"
     aria-label="Seleção de páginas na lista de produto"
+
   ></mat-paginator>
 </div>
 
-<div class="mat-elevation-z8 tabela-produto">
+<div class="tabela-produto">
   <table mat-table [dataSource]="dataSource" matSort>
     <!-- Coluna Nome -->
     <ng-container matColumnDef="nome">

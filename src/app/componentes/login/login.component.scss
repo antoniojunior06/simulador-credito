@@ -1,11 +1,12 @@
 
+
 .container {
   display: flex;
   justify-content: center;
   margin-top: 20px;
 }
 
-.container-simulador {
+.container-cadastro-produto {
   display: flex;
   flex-direction: column;
   align-items: left;
@@ -14,20 +15,15 @@
   padding: 32px;
   border-radius: 20px;
   border: 1px solid var(--cinza-darker-1);
-  position: relative;
-}
-
-.back-icon {
-  position: absolute;
-  top: 8px;
-  left: 8px;
-  cursor: pointer;
 }
 
 h2 {
   color: var(--azul_cx-st);
   text-align: center;
-  margin-top: 0;
+}
+
+label {
+  font-weight: 500;
 }
 
 .custom-field {
@@ -35,8 +31,12 @@ h2 {
   margin-bottom: 16px;
 }
 
-label {
-  font-weight: 500;
+mat-icon {
+  color: var(--laranja_cx-st);
+}
+
+.input-zero {
+  color: #FFFFFF;
 }
 
 div .botao-acao {
@@ -60,14 +60,6 @@ div .botao-acao:disabled {
   color: white;
 }
 
-mat-icon {
-  color: var(--laranja_cx-st);
-}
-
-.input-zero {
-  color: #FFFFFF;
-}
-
 .mat-mdc-form-field-input-control {
   font-family: var(--fonte-principal) !important;
   color: var(--grafite-st) !important;
@@ -85,3 +77,9 @@ mat-icon {
 :host ::ng-deep .custom-field.mat-mdc-form-field:hover .mdc-notched-outline__trailing {
   border-color: var(--laranja_cx-st) !important;
 }
+
+
+
+
+
+

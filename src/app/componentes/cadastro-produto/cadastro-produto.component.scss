@@ -14,11 +14,20 @@
   padding: 32px;
   border-radius: 20px;
   border: 1px solid var(--cinza-darker-1);
+  position: relative;
+}
+
+.back-icon {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  cursor: pointer;
 }
 
 h2 {
   color: var(--azul_cx-st);
   text-align: center;
+  margin-top: 0;
 }
 
 label {

@@ -15,7 +15,7 @@ import {
   ReactiveFormsModule,
   Validators,
 } from '@angular/forms';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { SimulacaoService } from '../../service/simulacao.service';
 import { ResultadoSimulacao } from '../../types/resultado-simulacao';
 import { Simulacao } from '../../types/simulacao';
@@ -35,7 +35,7 @@ import { MatDialog } from '@angular/material/dialog';
     CommonModule,
     MoedaDinamicaDirective,
     ReactiveFormsModule,
-    ResultadoSimulacaoComponent
+    RouterLink
 ],
   templateUrl: './simulador.component.html',
   styleUrl: './simulador.component.scss',
@@ -47,7 +47,6 @@ export class SimuladorComponent implements OnInit {
 
   constructor(
     private produtoService: ProdutoService,
-    private router: Router,
     private simulacaoService: SimulacaoService,
     private dialog: MatDialog
   ) {}
@@ -69,15 +68,6 @@ export class SimuladorComponent implements OnInit {
   listar(): void {
     this.listaProdutos$ = this.produtoService.listar();
   }
-
-  // carregarProduto() {
-  //   const id = this.activatedRoute.snapshot.paramMap.get('id');
-  //   if (id) {
-  //     this.produtoService.buscarPorId(parseInt(id)).subscribe((produto) => {
-  //       this.form.patchValue(produto);
-  //     });
-  //   }
-  // }
 
   simular() {
     const simulacao = this.form.value;

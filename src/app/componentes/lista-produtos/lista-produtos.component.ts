@@ -7,13 +7,13 @@ import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
 import { MatSort, MatSortModule } from '@angular/material/sort';
 import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-lista-produtos',
   standalone: true,
-  imports: [MatTableModule, MatFormFieldModule, MatPaginatorModule, MatSortModule, MatInputModule, MatIconModule, CommonModule],
+  imports: [MatTableModule, MatFormFieldModule, MatPaginatorModule, MatSortModule, MatInputModule, MatIconModule, CommonModule, RouterLink],
   templateUrl: './lista-produtos.component.html',
   styleUrl: './lista-produtos.component.scss'
 })
@@ -28,12 +28,15 @@ export class ListaProdutosComponent implements OnInit {
   constructor(private produtoService: ProdutoService, private router: Router) { }
 
   ngOnInit() {
+
     this.listar();
   }
 
   ngAfterViewInit() {
     this.dataSource.paginator = this.paginator;
     this.dataSource.sort = this.sort;
+    this.paginator._intl.nextPageLabel = 'Próxima página';
+    this.paginator._intl.previousPageLabel = 'Página anterior';
   }
 
   listar() {

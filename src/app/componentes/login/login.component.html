@@ -1,0 +1,30 @@
+<div class="container">
+  <form
+    [formGroup]="form"
+    class="container-cadastro-produto"
+  >
+    <h2>Acesso ao sistema</h2>
+    <label for="username">Usuário</label>
+    <mat-form-field class="custom-field" appearance="outline">
+      <input id="username" matInput formControlName="username" />
+      <mat-icon matPrefix fontIcon="app_registration"></mat-icon>
+    </mat-form-field>
+
+    <label for="password">Senha</label>
+    <mat-form-field class="custom-field" appearance="outline">
+      <input
+        id="password"
+        matInput
+        formControlName="password"
+      />
+      <mat-icon matPrefix fontIcon="percent"></mat-icon>
+    </mat-form-field>
+
+    <div>
+      <button class="botao-acao" mat-raised-button [disabled]="form.invalid" (click)="login()">
+        Entrar
+      </button>
+    </div>
+  </form>
+</div>
+
