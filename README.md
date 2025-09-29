@@ -1,27 +1,75 @@
-# SimuladorCreditoHack
+# Simulador de Crédito Hack
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.17.
+Projeto Angular para simulação de crédito, cadastro e listagem de produtos, com autenticação e proteção de rotas.
 
-## Development server
+## Funcionalidades
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Simulador de Crédito:** Simule parcelas, juros e amortização.
+- **Cadastro de Produtos:** Adicione e edite produtos (apenas administradores).
+- **Listagem de Produtos:** Visualize produtos cadastrados.
+- **Listagem de Atividades:** Acompanhe atividades do sistema.
+- **Autenticação:** Login e proteção de rotas por perfil (admin/usuário).
+- **Guards:** Controle de acesso com `authGuard` e `adminGuard`.
+- **Material Design:** Interface moderna com Angular Material.
 
-## Code scaffolding
+## Estrutura de Pastas
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```
+src/app/
+  componentes/         # Componentes compartilhados (login, lista-atividades)
+  features/
+    simulador/         # Simulador e resultado da simulação
+    produto/           # Cadastro e listagem de produtos
+  guards/              # Proteção de rotas
+  service/             # Serviços de dados e autenticação
+  types/               # Tipos e interfaces
+```
 
-## Build
+## Instalação
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```sh
+git clone https://github.com/seu-usuario/simulador-credito-hack.git
+cd simulador-credito-hack
+npm install
+```
 
-## Running unit tests
+## Executando
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```sh
+ng serve
+```
+Acesse [http://localhost:4200](http://localhost:4200).
 
-## Running end-to-end tests
+## Executando o Backend Fake (json-server)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+1. Instale o json-server (se necessário):
+    ```sh
+    npm install -g json-server
+    ```
+2. Crie um arquivo `db.json` na raiz do projeto com seus dados iniciais.
+3. Execute:
+    ```sh
+    npm start
+    ```
+4. O Angular irá consumir a API em `http://localhost:3000`.
 
-## Further help
+## Tecnologias
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Angular
+- Angular Material
+- TypeScript
+
+## Login
+
+O usuário e senha estão mockados.
+
+Para admin:
+```sh
+usuário: admin
+senha: 123
+```
+Para cliente:
+```sh
+usuário: cliente
+senha: 123
+```
