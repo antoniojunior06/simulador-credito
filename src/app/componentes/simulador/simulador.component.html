@@ -2,17 +2,24 @@
   <form [formGroup]="form" (ngSubmit)="simular()" class="container-simulador">
     <mat-icon fontIcon="arrow_back" class="back-icon" routerLink="/listaAtividades"></mat-icon>
     <h2>Simulador de empréstimo</h2>
+
     <label for="option">Crédito</label>
     <mat-form-field class="custom-field" appearance="outline">
-      <mat-select formControlName="produto">
+      <mat-select formControlName="produto" (selectionChange)="onProdutoChange($event.value)" id="option" placeholder="Selecione o crédito">
         @for (produto of listaProdutos$ | async ; track produto.id) {
         <mat-option [value]="produto">{{ produto.nome }}</mat-option>
         }
       </mat-select>
     </mat-form-field>
 
-    <label for="valor">Valor</label>
-    <mat-form-field class="custom-field" appearance="outline">
+    <div class="label-container">
+      <label for="valor">Valor</label>
+      <app-erro-form #erroValor="erroForm" [form]="form" campo="valor"></app-erro-form>
+    </div>
+    <mat-form-field
+      class="custom-field"
+      appearance="outline"
+      [ngClass]="{ 'campo-invalido': erroValor.invalido }">
       <input
         id="valor"
         matInput
@@ -24,8 +31,15 @@
       <mat-icon matPrefix fontIcon="price_change"></mat-icon>
     </mat-form-field>
 
-    <label for="prazo-meses">Prazo (em meses)</label>
-    <mat-form-field class="custom-field" appearance="outline">
+    <div class="label-container">
+      <label for="prazo-meses">Prazo (em meses)</label>
+      <app-erro-form #erroPrazo="erroForm" [form]="form" campo="prazo"></app-erro-form>
+    </div>
+
+    <mat-form-field
+      class="custom-field"
+      appearance="outline"
+      [ngClass]="{ 'campo-invalido': erroPrazo.invalido }">
       <input
         type="number"
         id="prazo-meses"
@@ -39,5 +53,5 @@
   </form>
 </div>
 
-<!-- <app-resultado-simulacao [resultado]="resultado"></app-resultado-simulacao> -->
+<app-mensagem #mensagem></app-mensagem>
 

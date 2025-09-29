@@ -32,3 +32,22 @@
   background-color: var(--laranja_cx-st);
   margin: 0 20px;
 }
+
+.logout-icon {
+  cursor: pointer;
+  color: white;
+  margin-left: 10px;
+}
+
+.username {
+  color: white;
+  font-weight: 500;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 20px;
+}

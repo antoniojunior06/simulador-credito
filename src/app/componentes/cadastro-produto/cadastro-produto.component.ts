@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit, ViewChild } from '@angular/core';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
@@ -13,6 +13,8 @@ import { ProdutoService } from '../../service/produto.service';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { MoedaDinamicaDirective } from '../../diretivas/moeda-dinamica.directive';
+import { MensagemComponent } from '../mensagem/mensagem.component';
+import { ErroFormComponent } from "../erro-form/erro-form.component";
 
 @Component({
   selector: 'app-cadastro-produto',
@@ -25,12 +27,15 @@ import { MoedaDinamicaDirective } from '../../diretivas/moeda-dinamica.directive
     MatButtonModule,
     ReactiveFormsModule,
     MoedaDinamicaDirective,
-    RouterLink
+    RouterLink,
+    MensagemComponent,
+    ErroFormComponent
 ],
   templateUrl: './cadastro-produto.component.html',
   styleUrl: './cadastro-produto.component.scss',
 })
 export class CadastroProdutoComponent implements OnInit {
+  @ViewChild('mensagem') mensagem!: MensagemComponent;
   form!: FormGroup;
 
   constructor(
@@ -47,7 +52,7 @@ export class CadastroProdutoComponent implements OnInit {
   inicializarFormulario() {
     this.form = new FormGroup({
       id: new FormControl(null),
-      nome: new FormControl('', Validators.required),
+      nome: new FormControl('', [Validators.required, Validators.maxLength(40)]),
       taxaAnual: new FormControl('', [
         Validators.required,
         Validators.min(0.001),
@@ -81,7 +86,7 @@ export class CadastroProdutoComponent implements OnInit {
     } else {
       this.produtoService.salvar(novoProduto).subscribe(() => {
         this.form.reset();
-        this.router.navigateByUrl('/listaProdutos');
+        this.mensagem.mostrar("Cadastro efetuado com sucesso!", "sucesso");
       });
     }
   }
@@ -91,4 +96,5 @@ export class CadastroProdutoComponent implements OnInit {
     const numericValue = el.value.replace(/\D/g, '');
     return !numericValue || parseInt(numericValue, 10) === 0;
   }
+
 }

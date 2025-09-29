@@ -13,15 +13,9 @@ export const routes: Routes = [
     path: 'login',
     component: LoginComponent,
   },
-  // {
-  //   path: '',
-  //   redirectTo: '/login',
-  //   pathMatch: 'full',
-  // },
-
   {
     path: '',
-    redirectTo: '/listaAtividades',
+    redirectTo: '/login',
     pathMatch: 'full',
   },
   {
@@ -31,16 +25,21 @@ export const routes: Routes = [
   {
     path: 'cadastroProduto',
     component: CadastroProdutoComponent,
-    // canActivate: [adminGuard],
+    canActivate: [adminGuard]
+  },
+  {
+    path: 'cadastroProduto/:id',
+    component: CadastroProdutoComponent,
+    canActivate: [adminGuard]
   },
   {
     path: 'listaProdutos',
     component: ListaProdutosComponent,
-    // canActivate: [adminGuard],
+    canActivate: [authGuard]
   },
   {
     path: 'simulador',
     component: SimuladorComponent,
-    // canActivate: [authGuard],
+    canActivate: [authGuard]
   },
 ];

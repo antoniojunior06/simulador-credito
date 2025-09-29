@@ -34,6 +34,12 @@ label {
   font-weight: 500;
 }
 
+.label-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .custom-field {
   width: 350px;
   margin-bottom: 16px;
@@ -84,6 +90,14 @@ div .botao-acao:disabled {
 :host ::ng-deep .custom-field.mat-mdc-form-field:hover .mdc-notched-outline__notch,
 :host ::ng-deep .custom-field.mat-mdc-form-field:hover .mdc-notched-outline__trailing {
   border-color: var(--laranja_cx-st) !important;
+}
+
+/* estado erro */
+:host ::ng-deep .custom-field.campo-invalido.mat-mdc-form-field .mdc-notched-outline__leading,
+:host ::ng-deep .custom-field.campo-invalido.mat-mdc-form-field .mdc-notched-outline__notch,
+:host ::ng-deep .custom-field.campo-invalido.mat-mdc-form-field .mdc-notched-outline__trailing {
+  border-color: red !important;
+  border-width: 2px !important;
 }
 
 

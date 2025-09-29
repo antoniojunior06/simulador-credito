@@ -9,6 +9,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { Router, RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { AuthService } from '../../service/auth.service';
 
 @Component({
   selector: 'app-lista-produtos',
@@ -19,17 +20,20 @@ import { CommonModule } from '@angular/common';
 })
 export class ListaProdutosComponent implements OnInit {
 
-  displayedColumns: string[] = ['nome', 'taxaAnual', 'prazoMaximo', 'editar', 'excluir'];
+  displayedColumns: string[] = ['nome', 'taxaAnual', 'prazoMaximo'];
   dataSource = new MatTableDataSource<Produto>();
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
 
-  constructor(private produtoService: ProdutoService, private router: Router) { }
+  constructor(private produtoService: ProdutoService, private router: Router,
+    private authService: AuthService) { }
 
   ngOnInit() {
-
     this.listar();
+    if (this.authService.isAdmin()) {
+      this.displayedColumns.push('editar', 'excluir');
+    }
   }
 
   ngAfterViewInit() {
@@ -52,7 +56,7 @@ export class ListaProdutosComponent implements OnInit {
   }
 
   editar(id: number) {
-    this.router.navigate(['/cadastro-produto', id]);
+    this.router.navigate(['/cadastroProduto', id]);
   }
 
   excluir(id: number) {

@@ -1,40 +1,46 @@
 {
   "produtos": [
     {
-      "id": 12,
-      "nome": "Empréstimo 1",
-      "taxaAnual": 15,
-      "prazoMaximo": 101
-    },
-    {
-      "id": 13,
-      "nome": "fdsfasdf",
-      "taxaAnual": 32.4,
-      "prazoMaximo": 50
-    },
-    {
-      "id": 14,
-      "nome": "Empréstimo 1",
-      "taxaAnual": 1523.66,
-      "prazoMaximo": 100
-    },
-    {
-      "id": 15,
-      "nome": "Empréstimo 1",
-      "taxaAnual": 1569.75,
+      "id": 2,
+      "nome": "CDC - Crédito Direto ao Cliente",
+      "taxaAnual": 100.99,
       "prazoMaximo": 48
     },
     {
-      "id": 16,
-      "nome": "Crédito Rural",
-      "taxaAnual": 19,
+      "id": 3,
+      "nome": "Cred Master",
+      "taxaAnual": 59.91,
       "prazoMaximo": 60
     },
     {
-      "id": 18,
-      "nome": "E",
-      "taxaAnual": 1.58,
-      "prazoMaximo": 12
+      "id": 4,
+      "nome": "Crédito Consignado",
+      "taxaAnual": 12.55,
+      "prazoMaximo": 120
+    },
+    {
+      "id": 5,
+      "nome": "Crédito FAA",
+      "taxaAnual": 26.67,
+      "prazoMaximo": 24
+    },
+    {
+      "id": 6,
+      "nome": "Vale Card",
+      "taxaAnual": 35.88,
+      "prazoMaximo": 48
+    },
+    {
+      "id": 7,
+      "nome": "Dinheiro Fácil",
+      "taxaAnual": 59.99,
+      "prazoMaximo": 72
+    },
+    {
+      "id": 8,
+      "nome": "Antecipação especial",
+      "taxaAnual": 49.99,
+      "prazoMaximo": 24
     }
   ],
   "simulacoes": [
@@ -884,6 +890,578 @@
         "prazoMaximo": 60
       },
       "valor": 5000,
+      "prazo": 12
+    },
+    {
+      "id": 79,
+      "produto": {
+        "id": 16,
+        "nome": "Crédito Rural",
+        "taxaAnual": 19,
+        "prazoMaximo": 60
+      },
+      "valor": 1500,
+      "prazo": 12
+    },
+    {
+      "id": 80,
+      "produto": {
+        "id": 1,
+        "nome": "Crédito Plus",
+        "taxaAnual": 26.82,
+        "prazoMaximo": 36
+      },
+      "valor": 5000,
+      "prazo": 24
+    },
+    {
+      "id": 81,
+      "produto": {
+        "id": 5,
+        "nome": "Crédito FAA",
+        "taxaAnual": 26.67,
+        "prazoMaximo": 24
+      },
+      "valor": 5000,
+      "prazo": 12
+    },
+    {
+      "id": 82,
+      "produto": {
+        "id": 2,
+        "nome": "CDC - Crédito Direto ao Cliente",
+        "taxaAnual": 100.99,
+        "prazoMaximo": 48
+      },
+      "valor": 2500,
+      "prazo": 24
+    },
+    {
+      "id": 83,
+      "produto": {
+        "id": 2,
+        "nome": "CDC - Crédito Direto ao Cliente",
+        "taxaAnual": 100.99,
+        "prazoMaximo": 48
+      },
+      "valor": 2500,
+      "prazo": 200
+    },
+    {
+      "id": 84,
+      "produto": {
+        "id": 2,
+        "nome": "CDC - Crédito Direto ao Cliente",
+        "taxaAnual": 100.99,
+        "prazoMaximo": 48
+      },
+      "valor": 2500,
+      "prazo": 49
+    },
+    {
+      "id": 85,
+      "produto": {
+        "id": 2,
+        "nome": "CDC - Crédito Direto ao Cliente",
+        "taxaAnual": 100.99,
+        "prazoMaximo": 48
+      },
+      "valor": 2500,
+      "prazo": 48
+    },
+    {
+      "id": 86,
+      "produto": {
+        "id": 2,
+        "nome": "CDC - Crédito Direto ao Cliente",
+        "taxaAnual": 100.99,
+        "prazoMaximo": 48
+      },
+      "valor": 1000,
+      "prazo": 49
+    },
+    {
+      "id": 87,
+      "produto": {
+        "id": 2,
+        "nome": "CDC - Crédito Direto ao Cliente",
+        "taxaAnual": 100.99,
+        "prazoMaximo": 48
+      },
+      "valor": 1000,
+      "prazo": 49
+    },
+    {
+      "id": 88,
+      "produto": {
+        "id": 2,
+        "nome": "CDC - Crédito Direto ao Cliente",
+        "taxaAnual": 100.99,
+        "prazoMaximo": 48
+      },
+      "valor": 1000,
+      "prazo": 49
+    },
+    {
+      "id": 89,
+      "produto": {
+        "id": 2,
+        "nome": "CDC - Crédito Direto ao Cliente",
+        "taxaAnual": 100.99,
+        "prazoMaximo": 48
+      },
+      "valor": 1000,
+      "prazo": 49
+    },
+    {
+      "id": 90,
+      "produto": {
+        "id": 2,
+        "nome": "CDC - Crédito Direto ao Cliente",
+        "taxaAnual": 100.99,
+        "prazoMaximo": 48
+      },
+      "valor": 11111.11,
+      "prazo": 49
+    },
+    {
+      "id": 91,
+      "produto": {
+        "id": 2,
+        "nome": "CDC - Crédito Direto ao Cliente",
+        "taxaAnual": 100.99,
+        "prazoMaximo": 48
+      },
+      "valor": 1000,
+      "prazo": 56
+    },
+    {
+      "id": 92,
+      "produto": {
+        "id": 2,
+        "nome": "CDC - Crédito Direto ao Cliente",
+        "taxaAnual": 100.99,
+        "prazoMaximo": 48
+      },
+      "valor": 5000,
+      "prazo": 49
+    },
+    {
+      "id": 93,
+      "produto": {
+        "id": 2,
+        "nome": "CDC - Crédito Direto ao Cliente",
+        "taxaAnual": 100.99,
+        "prazoMaximo": 48
+      },
+      "valor": 1000,
+      "prazo": 60
+    },
+    {
+      "id": 94,
+      "produto": {
+        "id": 2,
+        "nome": "CDC - Crédito Direto ao Cliente",
+        "taxaAnual": 100.99,
+        "prazoMaximo": 48
+      },
+      "valor": 1000,
+      "prazo": 60
+    },
+    {
+      "id": 95,
+      "produto": {
+        "id": 2,
+        "nome": "CDC - Crédito Direto ao Cliente",
+        "taxaAnual": 100.99,
+        "prazoMaximo": 48
+      },
+      "valor": 1000,
+      "prazo": 60
+    },
+    {
+      "id": 96,
+      "produto": {
+        "id": 2,
+        "nome": "CDC - Crédito Direto ao Cliente",
+        "taxaAnual": 100.99,
+        "prazoMaximo": 48
+      },
+      "valor": 1000,
+      "prazo": 49
+    },
+    {
+      "id": 97,
+      "produto": {
+        "id": 2,
+        "nome": "CDC - Crédito Direto ao Cliente",
+        "taxaAnual": 100.99,
+        "prazoMaximo": 48
+      },
+      "valor": 2500,
+      "prazo": 49
+    },
+    {
+      "id": 98,
+      "produto": {
+        "id": 2,
+        "nome": "CDC - Crédito Direto ao Cliente",
+        "taxaAnual": 100.99,
+        "prazoMaximo": 48
+      },
+      "valor": 2500,
+      "prazo": 49
+    },
+    {
+      "id": 99,
+      "produto": {
+        "id": 2,
+        "nome": "CDC - Crédito Direto ao Cliente",
+        "taxaAnual": 100.99,
+        "prazoMaximo": 48
+      },
+      "valor": 2500,
+      "prazo": 49
+    },
+    {
+      "id": 100,
+      "produto": {
+        "id": 3,
+        "nome": "Cred Master",
+        "taxaAnual": 59.91,
+        "prazoMaximo": 60
+      },
+      "valor": 1000,
+      "prazo": 10000
+    },
+    {
+      "id": 101,
+      "produto": {
+        "id": 2,
+        "nome": "CDC - Crédito Direto ao Cliente",
+        "taxaAnual": 100.99,
+        "prazoMaximo": 48
+      },
+      "valor": 1500,
+      "prazo": 60
+    },
+    {
+      "id": 102,
+      "produto": {
+        "id": 7,
+        "nome": "Dinheiro Fácil",
+        "taxaAnual": 59.99,
+        "prazoMaximo": 72
+      },
+      "valor": 5000,
+      "prazo": 60
+    },
+    {
+      "id": 103,
+      "produto": {
+        "id": 8,
+        "nome": "Antecipação especial",
+        "taxaAnual": 49.99,
+        "prazoMaximo": 24
+      },
+      "valor": 1000,
+      "prazo": 12
+    },
+    {
+      "id": 104,
+      "produto": {
+        "id": 7,
+        "nome": "Dinheiro Fácil",
+        "taxaAnual": 59.99,
+        "prazoMaximo": 72
+      },
+      "valor": 1200,
+      "prazo": 36
+    },
+    {
+      "id": 105,
+      "produto": {
+        "id": 5,
+        "nome": "Crédito FAA",
+        "taxaAnual": 26.67,
+        "prazoMaximo": 24
+      },
+      "valor": 5000,
+      "prazo": 120
+    },
+    {
+      "id": 106,
+      "produto": {
+        "id": 5,
+        "nome": "Crédito FAA",
+        "taxaAnual": 26.67,
+        "prazoMaximo": 24
+      },
+      "valor": 5000,
+      "prazo": 120
+    },
+    {
+      "id": 107,
+      "produto": {
+        "id": 3,
+        "nome": "Cred Master",
+        "taxaAnual": 59.91,
+        "prazoMaximo": 60
+      },
+      "valor": 2500,
+      "prazo": 12
+    },
+    {
+      "id": 108,
+      "produto": {
+        "id": 4,
+        "nome": "Crédito Consignado",
+        "taxaAnual": 12.55,
+        "prazoMaximo": 120
+      },
+      "valor": 65000,
+      "prazo": 120
+    },
+    {
+      "id": 109,
+      "produto": {
+        "id": 4,
+        "nome": "Crédito Consignado",
+        "taxaAnual": 12.55,
+        "prazoMaximo": 120
+      },
+      "valor": 1000,
+      "prazo": 12
+    },
+    {
+      "id": 110,
+      "produto": {
+        "id": 2,
+        "nome": "CDC - Crédito Direto ao Cliente",
+        "taxaAnual": 100.99,
+        "prazoMaximo": 48
+      },
+      "valor": 1000,
+      "prazo": 120
+    },
+    {
+      "id": 111,
+      "produto": {
+        "id": 2,
+        "nome": "CDC - Crédito Direto ao Cliente",
+        "taxaAnual": 100.99,
+        "prazoMaximo": 48
+      },
+      "valor": 1000,
+      "prazo": 120
+    },
+    {
+      "id": 112,
+      "produto": {
+        "id": 2,
+        "nome": "CDC - Crédito Direto ao Cliente",
+        "taxaAnual": 100.99,
+        "prazoMaximo": 48
+      },
+      "valor": 1000,
+      "prazo": 24
+    },
+    {
+      "id": 113,
+      "produto": {
+        "id": 7,
+        "nome": "Dinheiro Fácil",
+        "taxaAnual": 59.99,
+        "prazoMaximo": 72
+      },
+      "valor": 1000,
+      "prazo": 12
+    },
+    {
+      "id": 114,
+      "produto": {
+        "id": 2,
+        "nome": "CDC - Crédito Direto ao Cliente",
+        "taxaAnual": 100.99,
+        "prazoMaximo": 48
+      },
+      "valor": 1000,
+      "prazo": 12122
+    },
+    {
+      "id": 115,
+      "produto": {
+        "id": 2,
+        "nome": "CDC - Crédito Direto ao Cliente",
+        "taxaAnual": 100.99,
+        "prazoMaximo": 48
+      },
+      "valor": 1000,
+      "prazo": 1002
+    },
+    {
+      "id": 116,
+      "produto": {
+        "id": 2,
+        "nome": "CDC - Crédito Direto ao Cliente",
+        "taxaAnual": 100.99,
+        "prazoMaximo": 48
+      },
+      "valor": 1000,
+      "prazo": 1002
+    },
+    {
+      "id": 117,
+      "produto": {
+        "id": 2,
+        "nome": "CDC - Crédito Direto ao Cliente",
+        "taxaAnual": 100.99,
+        "prazoMaximo": 48
+      },
+      "valor": 1000,
+      "prazo": 1222
+    },
+    {
+      "id": 118,
+      "produto": {
+        "id": 2,
+        "nome": "CDC - Crédito Direto ao Cliente",
+        "taxaAnual": 100.99,
+        "prazoMaximo": 48
+      },
+      "valor": 1000,
+      "prazo": 45
+    },
+    {
+      "id": 119,
+      "produto": {
+        "id": 2,
+        "nome": "CDC - Crédito Direto ao Cliente",
+        "taxaAnual": 100.99,
+        "prazoMaximo": 48
+      },
+      "valor": 1000,
+      "prazo": 45
+    },
+    {
+      "id": 120,
+      "produto": {
+        "id": 2,
+        "nome": "CDC - Crédito Direto ao Cliente",
+        "taxaAnual": 100.99,
+        "prazoMaximo": 48
+      },
+      "valor": 1000,
+      "prazo": 120
+    },
+    {
+      "id": 121,
+      "produto": {
+        "id": 2,
+        "nome": "CDC - Crédito Direto ao Cliente",
+        "taxaAnual": 100.99,
+        "prazoMaximo": 48
+      },
+      "valor": 1000,
+      "prazo": 120
+    },
+    {
+      "id": 122,
+      "produto": {
+        "id": 2,
+        "nome": "CDC - Crédito Direto ao Cliente",
+        "taxaAnual": 100.99,
+        "prazoMaximo": 48
+      },
+      "valor": 1000,
+      "prazo": 120
+    },
+    {
+      "id": 123,
+      "produto": {
+        "id": 2,
+        "nome": "CDC - Crédito Direto ao Cliente",
+        "taxaAnual": 100.99,
+        "prazoMaximo": 48
+      },
+      "valor": 1000,
+      "prazo": 120
+    },
+    {
+      "id": 124,
+      "produto": {
+        "id": 2,
+        "nome": "CDC - Crédito Direto ao Cliente",
+        "taxaAnual": 100.99,
+        "prazoMaximo": 48
+      },
+      "valor": 1000,
+      "prazo": 120
+    },
+    {
+      "id": 125,
+      "produto": {
+        "id": 3,
+        "nome": "Cred Master",
+        "taxaAnual": 59.91,
+        "prazoMaximo": 60
+      },
+      "valor": 1000,
+      "prazo": 120
+    },
+    {
+      "id": 126,
+      "produto": {
+        "id": 3,
+        "nome": "Cred Master",
+        "taxaAnual": 59.91,
+        "prazoMaximo": 60
+      },
+      "valor": 1000,
+      "prazo": 120
+    },
+    {
+      "id": 127,
+      "produto": {
+        "id": 3,
+        "nome": "Cred Master",
+        "taxaAnual": 59.91,
+        "prazoMaximo": 60
+      },
+      "valor": 1000,
+      "prazo": 120
+    },
+    {
+      "id": 128,
+      "produto": {
+        "id": 3,
+        "nome": "Cred Master",
+        "taxaAnual": 59.91,
+        "prazoMaximo": 60
+      },
+      "valor": 1000,
+      "prazo": 120
+    },
+    {
+      "id": 129,
+      "produto": {
+        "id": 2,
+        "nome": "CDC - Crédito Direto ao Cliente",
+        "taxaAnual": 100.99,
+        "prazoMaximo": 48
+      },
+      "valor": 2000,
+      "prazo": 48
+    },
+    {
+      "id": 130,
+      "produto": {
+        "id": 2,
+        "nome": "CDC - Crédito Direto ao Cliente",
+        "taxaAnual": 100.99,
+        "prazoMaximo": 48
+      },
+      "valor": 1000,
       "prazo": 12
     }
   ]

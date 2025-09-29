@@ -9,4 +9,12 @@
   </h1>
   <span class="divisor"></span>
   <h2 class="titulo">Simulador de empréstimo</h2>
+
+  @if (authService.isLogado()) {
+    <div class="user-info">
+      <span class="username">{{ authService.usuario?.role }}</span>
+      <mat-icon fontIcon="logout" (click)="logout()" class="logout-icon"></mat-icon>
+    </div>
+  }
+
 </div>

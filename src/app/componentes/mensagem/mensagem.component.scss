@@ -1,0 +1,20 @@
+
+div {
+  position: fixed; /* fica fixo na tela */
+  top: calc(15%);       /* distância do topo */
+  left: calc(65%);       /* centraliza */
+  padding: 12px 20px;
+  color: white;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.sucesso {
+   background: #179231;
+}
+
+.erro {
+  background: #D93636;
+}

@@ -3,21 +3,22 @@
     [formGroup]="form"
     class="container-cadastro-produto"
   >
-    <h2>Acesso ao sistema</h2>
+    <h2>Acesso ao simulador</h2>
     <label for="username">Usuário</label>
     <mat-form-field class="custom-field" appearance="outline">
       <input id="username" matInput formControlName="username" />
-      <mat-icon matPrefix fontIcon="app_registration"></mat-icon>
+      <mat-icon matPrefix fontIcon="account_circle"></mat-icon>
     </mat-form-field>
 
     <label for="password">Senha</label>
     <mat-form-field class="custom-field" appearance="outline">
       <input
         id="password"
+        type="password"
         matInput
         formControlName="password"
       />
-      <mat-icon matPrefix fontIcon="percent"></mat-icon>
+      <mat-icon matPrefix fontIcon="password"></mat-icon>
     </mat-form-field>
 
     <div>

@@ -1,0 +1,19 @@
+
+@if (control.errors && control.touched) {
+  @if (control.errors['required']) {
+    <div class="mensagem-erro">
+      Campo obrigatório
+    </div>
+  }
+  @if (control.errors['maxlength']) {
+  <div class="mensagem-erro">
+    Máximo de {{ control.errors['maxlength'].requiredLength }} caracteres.
+  </div>
+  }
+  @if (control.errors['prazoMaximo']) {
+    <div class="mensagem-erro">
+      Prazo máximo: {{ control.errors['prazoMaximo'].max }} meses.
+    </div>
+  }
+
+}

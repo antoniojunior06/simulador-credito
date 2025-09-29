@@ -7,28 +7,48 @@
     class="container-cadastro-produto"
   >
     <mat-icon fontIcon="arrow_back" class="back-icon" routerLink="/listaAtividades"></mat-icon>
-    <h2>Cadastro de produto</h2>
-    <label for="nome">Nome</label>
-    <mat-form-field class="custom-field" appearance="outline">
-      <input id="nome" matInput formControlName="nome" />
+    <h2>{{ form.value.id ? "Editar produto" : "Cadastro de produto" }}</h2>
+
+    <div class="label-container">
+      <label for="nome">Nome</label>
+      <app-erro-form #erroNome="erroForm" [form]="form" campo="nome"></app-erro-form>
+    </div>
+    <mat-form-field
+      class="custom-field"
+      appearance="outline"
+      [ngClass]="{'campo-invalido': erroNome.invalido}">
+      <input id="nome" matInput formControlName="nome"  />
       <mat-icon matPrefix fontIcon="app_registration"></mat-icon>
     </mat-form-field>
 
-    <label for="taxa-anual">Taxa anual</label>
-    <mat-form-field class="custom-field" appearance="outline">
+    <div class="label-container">
+      <label for="taxa-anual">Taxa anual</label>
+      <app-erro-form #erroTaxa="erroForm" [form]="form" campo="taxaAnual"></app-erro-form>
+    </div>
+    <mat-form-field
+      class="custom-field"
+      appearance="outline"
+      [ngClass]="{'campo-invalido': erroTaxa.invalido}">
       <input
         id="taxa-anual"
         matInput
         formControlName="taxaAnual"
         appMoedaDinamica
         #taxaInput
-        [ngClass]="{ 'input-zero': isInputZerado(taxaInput) }"
+        [ngClass]="{ 'input-zero': isInputZerado(taxaInput)}"
       />
       <mat-icon matPrefix fontIcon="percent"></mat-icon>
     </mat-form-field>
 
-    <label for="prazo-maximo">Prazo máximo (em meses)</label>
-    <mat-form-field class="custom-field" appearance="outline">
+    <div class="label-container">
+      <label for="prazo-maximo">Prazo máximo (em meses)</label>
+      <app-erro-form #erroPrazo="erroForm" [form]="form" campo="prazoMaximo"></app-erro-form>
+    </div>
+    <mat-form-field
+      class="custom-field"
+      appearance="outline"
+      [ngClass]="{'campo-invalido': erroPrazo.invalido}"
+    >
       <input type="number" id="prazo-maximo" matInput formControlName="prazoMaximo" />
       <mat-icon matPrefix fontIcon="date_range"></mat-icon>
     </mat-form-field>
@@ -39,4 +59,5 @@
       </button>
     </div>
   </form>
+  <app-mensagem #mensagem></app-mensagem>
 </div>

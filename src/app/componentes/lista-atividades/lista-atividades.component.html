@@ -1,5 +1,5 @@
 <div class="card-group">
-  <!-- @if (authService.isAdmin()) { -->
+  @if (authService.isAdmin()) {
   <mat-card
     class="card-item"
     appearance="outlined"
@@ -15,7 +15,11 @@
     </mat-card-header>
   </mat-card>
 
-  <mat-card class="card-item" appearance="outlined" routerLink="/listaProdutos">
+  }
+
+  @if (authService.isCliente() || authService.isAdmin()) {
+
+    <mat-card class="card-item" appearance="outlined" routerLink="/listaProdutos">
     <mat-icon
       aria-hidden="false"
       aria-label="Example home icon"
@@ -25,9 +29,7 @@
       <mat-card-title class="card-title">Listar produtos</mat-card-title>
     </mat-card-header>
   </mat-card>
-  <!-- } -->
 
-  <!-- @if (authService.isCliente() || authService.isAdmin()) { -->
   <mat-card class="card-item" appearance="outlined" routerLink="/simulador">
     <mat-icon
       aria-hidden="false"
@@ -38,5 +40,5 @@
       <mat-card-title>Simular empréstimo</mat-card-title>
     </mat-card-header>
   </mat-card>
-  <!-- } -->
+  }
 </div>

@@ -1,7 +1,7 @@
 <div>
   @if (resultado) {
     <div class="resultado-cabecalho">
-      <h3>Resultado da Simulação</h3>
+      <h3>Resultado da simulação</h3>
       <p><b>Produto:</b> {{ resultado.produto.nome }}</p>
       <p><b>Valor solicitado:</b> {{ resultado.valor | currency:'BRL':'symbol':'1.2-2' }}</p>
       <p><b>Prazo:</b> {{ resultado.prazo }} meses</p>

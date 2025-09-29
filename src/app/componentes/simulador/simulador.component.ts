@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
@@ -10,17 +10,21 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MoedaDinamicaDirective } from '../../diretivas/moeda-dinamica.directive';
 import {
+  AbstractControl,
   FormControl,
   FormGroup,
   ReactiveFormsModule,
+  ValidationErrors,
+  ValidatorFn,
   Validators,
 } from '@angular/forms';
-import { ActivatedRoute, Router, RouterLink } from '@angular/router';
+import { RouterLink } from '@angular/router';
 import { SimulacaoService } from '../../service/simulacao.service';
 import { ResultadoSimulacao } from '../../types/resultado-simulacao';
-import { Simulacao } from '../../types/simulacao';
 import { ResultadoSimulacaoComponent } from "../resultado-simulacao/resultado-simulacao.component";
 import { MatDialog } from '@angular/material/dialog';
+import { MensagemComponent } from '../mensagem/mensagem.component';
+import { ErroFormComponent } from '../erro-form/erro-form.component';
 
 @Component({
   selector: 'app-simulador',
@@ -35,7 +39,9 @@ import { MatDialog } from '@angular/material/dialog';
     CommonModule,
     MoedaDinamicaDirective,
     ReactiveFormsModule,
-    RouterLink
+    RouterLink,
+    MensagemComponent,
+    ErroFormComponent
 ],
   templateUrl: './simulador.component.html',
   styleUrl: './simulador.component.scss',
@@ -44,6 +50,19 @@ export class SimuladorComponent implements OnInit {
   listaProdutos$: Observable<Produto[]> = of();
   form!: FormGroup;
   resultado!: ResultadoSimulacao;
+  produto!: Produto
+  @ViewChild('mensagem') mensagem!: MensagemComponent;
+  prazoMaximoValidator: ValidatorFn = (control: AbstractControl): ValidationErrors | null => {
+  if (this.produto && control.value > this.produto.prazoMaximo) {
+    return {
+      prazoMaximo: {
+        max: this.produto.prazoMaximo,
+        atual: control.value
+      }
+    };
+  }
+  return null;
+};
 
   constructor(
     private produtoService: ProdutoService,
@@ -61,7 +80,7 @@ export class SimuladorComponent implements OnInit {
       id: new FormControl(null),
       produto: new FormControl(null, Validators.required),
       valor: new FormControl('', [Validators.required, Validators.min(0.001)]),
-      prazo: new FormControl('', Validators.required),
+      prazo: new FormControl('', [Validators.required, this.prazoMaximoValidator]),
     });
   }
 
@@ -72,7 +91,11 @@ export class SimuladorComponent implements OnInit {
   simular() {
     const simulacao = this.form.value;
     this.simulacaoService.simular(simulacao).subscribe(resultado => {
-      // this.resultado = resultado;
+      if (resultado.prazo > resultado.produto.prazoMaximo) {
+        this.mensagem.mostrar(`Prazo máximo: ${resultado.produto.prazoMaximo} meses.`, 'erro');
+        return;
+      }
+
       this.form.reset();
       this.openDialog(resultado);
     });
@@ -91,4 +114,11 @@ export class SimuladorComponent implements OnInit {
       data: resultado
     });
   }
+
+  onProdutoChange(produto: Produto) {
+    this.produto = produto; // opcional, se quiser usar em outros lugares
+    this.form.get('prazo')?.updateValueAndValidity();
+    console.log(this.produto.prazoMaximo);
+}
+
 }
