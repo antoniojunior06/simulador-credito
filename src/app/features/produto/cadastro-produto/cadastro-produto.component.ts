@@ -9,12 +9,12 @@ import {
   ReactiveFormsModule,
   Validators,
 } from '@angular/forms';
-import { ProdutoService } from '../../service/produto.service';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { MoedaDinamicaDirective } from '../../diretivas/moeda-dinamica.directive';
-import { MensagemComponent } from '../mensagem/mensagem.component';
-import { ErroFormComponent } from "../erro-form/erro-form.component";
+import { MoedaDinamicaDirective } from '../../../diretivas/moeda-dinamica.directive';
+import { MensagemComponent } from '../../../shared/mensagem/mensagem.component';
+import { ErroFormComponent } from '../../../shared/erro-form/erro-form.component';
+import { ProdutoService } from '../../../service/produto.service';
 
 @Component({
   selector: 'app-cadastro-produto',

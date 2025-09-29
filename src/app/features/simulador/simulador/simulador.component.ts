@@ -3,12 +3,12 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { Observable, of } from 'rxjs';
-import { Produto } from '../../types/produto';
-import { ProdutoService } from '../../service/produto.service';
+import { Produto } from '../../../types/produto';
+import { ProdutoService } from '../../../service/produto.service';
 import { AsyncPipe, CommonModule } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
-import { MoedaDinamicaDirective } from '../../diretivas/moeda-dinamica.directive';
+import { MoedaDinamicaDirective } from '../../../diretivas/moeda-dinamica.directive';
 import {
   AbstractControl,
   FormControl,
@@ -19,12 +19,12 @@ import {
   Validators,
 } from '@angular/forms';
 import { RouterLink } from '@angular/router';
-import { SimulacaoService } from '../../service/simulacao.service';
-import { ResultadoSimulacao } from '../../types/resultado-simulacao';
-import { ResultadoSimulacaoComponent } from "../resultado-simulacao/resultado-simulacao.component";
+import { SimulacaoService } from '../../../service/simulacao.service';
+import { ResultadoSimulacao } from '../../../types/resultado-simulacao';
 import { MatDialog } from '@angular/material/dialog';
-import { MensagemComponent } from '../mensagem/mensagem.component';
-import { ErroFormComponent } from '../erro-form/erro-form.component';
+import { MensagemComponent } from '../../../shared/mensagem/mensagem.component';
+import { ErroFormComponent } from '../../../shared/erro-form/erro-form.component';
+import { ResultadoSimulacaoComponent } from '../resultado-simulacao/resultado-simulacao.component';
 
 @Component({
   selector: 'app-simulador',

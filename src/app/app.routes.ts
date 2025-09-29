@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import { Routes } from '@angular/router';
 import { ListaAtividadesComponent } from './componentes/lista-atividades/lista-atividades.component';
-import { CadastroProdutoComponent } from './componentes/cadastro-produto/cadastro-produto.component';
-import { ListaProdutosComponent } from './componentes/lista-produtos/lista-produtos.component';
-import { SimuladorComponent } from './componentes/simulador/simulador.component';
+import { ListaProdutosComponent } from './features/produto/lista-produtos/lista-produtos.component';
+import { SimuladorComponent } from './features/simulador/simulador/simulador.component';
 import { LoginComponent } from './componentes/login/login.component';
 import { adminGuard } from './guards/admin.guard';
 import { authGuard} from './guards/auth.guard';
+import { CadastroProdutoComponent } from './features/produto/cadastro-produto/cadastro-produto.component';
 
 export const routes: Routes = [
   {

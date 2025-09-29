@@ -1,9 +1,9 @@
 import { Component, Inject, Input } from '@angular/core';
-import { ResultadoSimulacao } from '../../types/resultado-simulacao';
 import { CommonModule } from '@angular/common';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatTableModule } from '@angular/material/table';
+import { ResultadoSimulacao } from '../../../types/resultado-simulacao';
 
 @Component({
   selector: 'app-resultado-simulacao',
@@ -14,11 +14,9 @@ import { MatTableModule } from '@angular/material/table';
 })
 export class ResultadoSimulacaoComponent {
 
-  //@Input() resultado!: ResultadoSimulacao;
   displayedColumns: string[] = ['mes', 'juros', 'amortizacao', 'saldoDevedor'];
 
   constructor(
-    // public dialogRef: MatDialogRef<ResultadoSimulacaoComponent>,
     @Inject(MAT_DIALOG_DATA) public resultado: ResultadoSimulacao
   ) {}
 }
